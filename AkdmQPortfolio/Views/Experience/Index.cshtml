@@ -1,0 +1,94 @@
+﻿@{
+    ViewData["Title"] = "Experience List";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<div class="container-fluid">
+
+    <!-- Başlık ve Buton -->
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h4 class="fw-bold text-dark">Deneyimler</h4>
+        <a href="/Experience/CreateExperience" class="btn btn-primary">
+            <i class="fas fa-plus me-1"></i> Yeni Deneyim
+        </a>
+    </div>
+
+    <!-- Tablo -->
+    <div class="card shadow-sm">
+        <div class="card-body">
+
+            <table class="table table-hover align-middle">
+                <thead class="table-light">
+                    <tr>
+                        <th>#</th>
+                        <th>Başlık</th>
+                        <th>Seviye</th>
+                        <th>Oluşturulma</th>
+                        <th class="text-center">İşlemler</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>3</td>
+                        <td>
+                            <span class="fw-semibold">C#</span>
+                        </td>
+                        <td>
+                            <span class="badge bg-success">70%</span>
+                        </td>
+                        <td>01.01.2025</td>
+                        <td class="text-center">
+                            <a href="/Experience/UpdateExperience/3" class="btn btn-sm btn-outline-success me-1">
+                                <i class="fas fa-edit"></i>
+                            </a>
+                            <a href="/Experience/DeleteExperience/3" class="btn btn-sm btn-outline-danger"
+                               onclick="return confirm('Bu deneyimi silmek istediğinize emin misiniz?')">
+                                <i class="fas fa-trash"></i>
+                            </a>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>4</td>
+                        <td>Python</td>
+                        <td>
+                            <span class="badge bg-warning text-dark">50%</span>
+                        </td>
+                        <td>01.01.2024</td>
+                        <td class="text-center">
+                            <a href="/Experience/UpdateExperience/4" class="btn btn-sm btn-outline-success me-1">
+                                <i class="fas fa-edit"></i>
+                            </a>
+                            <a href="/Experience/DeleteExperience/4" class="btn btn-sm btn-outline-danger"
+                               onclick="return confirm('Bu deneyimi silmek istediğinize emin misiniz?')">
+                                <i class="fas fa-trash"></i>
+                            </a>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>5</td>
+                        <td>HTML</td>
+                        <td>
+                            <span class="badge bg-success">70%</span>
+                        </td>
+                        <td>01.01.2024</td>
+                        <td class="text-center">
+                            <a href="/Experience/UpdateExperience/5" class="btn btn-sm btn-outline-success me-1">
+                                <i class="fas fa-edit"></i>
+                            </a>
+                            <a href="/Experience/DeleteExperience/5" class="btn btn-sm btn-outline-danger"
+                               onclick="return confirm('Bu deneyimi silmek istediğinize emin misiniz?')">
+                                <i class="fas fa-trash"></i>
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+
+            </table>
+
+        </div>
+    </div>
+
+</div>

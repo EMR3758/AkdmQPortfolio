@@ -1,0 +1,38 @@
+﻿
+@{
+    ViewData["Title"] = "UpdateExperience";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+<form method="post" class="p-4 border rounded shadow-sm bg-light">
+
+    <h5 class="mb-4 text-center text-primary">Deneyim Güncelle</h5>
+
+    <div class="mb-3">
+        <label class="form-label fw-semibold">Title</label>
+        <input type="text"
+               class="form-control"
+               name="ExperienceTitle"
+               value="emirhan"
+               placeholder="Deneyim başlığı giriniz" />
+    </div>
+
+    <div class="mb-4">
+        <label class="form-label fw-semibold">Level</label>
+        <input type="number"
+               class="form-control"
+               name="ExperienceLevel"
+               value="85"
+               min="0"
+               max="100"
+               placeholder="Seviye (0-100)" />
+    </div>
+
+    <div class="d-grid">
+        <button type="submit" class="btn btn-success btn-lg">
+            Güncelle
+        </button>
+    </div>
+
+</form>
+
+
